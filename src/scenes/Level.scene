@@ -21,25 +21,26 @@
                 "key": "FufuSuperDino"
             },
             "x": 400,
-            "y": 235
-        },
-        {
-            "type": "Text",
-            "id": "5c228da6-971a-4347-84e8-9f62464ba76d",
-            "label": "text",
-            "components": [],
-            "x": 400,
-            "y": 436,
-            "text": "Phaser 3 + Phaser Editor 2D\nWebpack + TypeScript",
-            "align": "center",
-            "fontFamily": "Arial",
-            "fontSize": "3em"
+            "y": 235,
+            "ArcadeComponent.active": true,
+            "body.velocity.x": 100,
+            "body.velocity.y": 100,
+            "body.bounce.x": 1,
+            "body.bounce.y": 1,
+            "collideWorldBounds": true,
+            "bodyGeometry": 0,
+            "radius": 91,
+            "body.width": 128,
+            "body.height": 128,
+            "body.offset.x": 31,
+            "body.offset.y": 31
         }
     ],
     "plainObjects": [],
     "meta": {
         "app": "Phaser Editor 2D - Scene Editor",
         "url": "https://phasereditor2d.com",
-        "contentType": "phasereditor2d.core.scene.SceneContentType"
+        "contentType": "phasereditor2d.core.scene.SceneContentType",
+        "version": 3
     }
 }

@@ -21,13 +21,15 @@ export default class Level extends Phaser.Scene {
 	editorCreate(): void {
 
 		// fufuSuperDino
-		const fufuSuperDino = this.add.image(400, 235, "FufuSuperDino");
-
-		// text
-		const text = this.add.text(400, 436, "", {});
-		text.setOrigin(0.5, 0.5);
-		text.text = "Phaser 3 + Phaser Editor 2D\nWebpack + TypeScript";
-		text.setStyle({ "align": "center", "fontFamily": "Arial", "fontSize": "3em" });
+		const fufuSuperDino = this.add.image(400, 235, "FufuSuperDino") as Phaser.GameObjects.Image & { body: Phaser.Physics.Arcade.Body };
+		this.physics.add.existing(fufuSuperDino, false);
+		fufuSuperDino.body.velocity.x = 100;
+		fufuSuperDino.body.velocity.y = 100;
+		fufuSuperDino.body.bounce.x = 1;
+		fufuSuperDino.body.bounce.y = 1;
+		fufuSuperDino.body.collideWorldBounds = true;
+		fufuSuperDino.body.setOffset(31, 31);
+		fufuSuperDino.body.setCircle(91);
 
 		// fufuSuperDino (components)
 		new PushOnClick(fufuSuperDino);
