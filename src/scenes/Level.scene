@@ -34,9 +34,39 @@
             "body.height": 128,
             "body.offset.x": 31,
             "body.offset.y": 31
+        },
+        {
+            "type": "Image",
+            "id": "f620e145-a659-44d6-a6c3-467423fe560a",
+            "label": "barbarian",
+            "components": [],
+            "texture": {
+                "key": "barbarian"
+            },
+            "x": 220,
+            "y": 192,
+            "ArcadeComponent.active": true,
+            "body.velocity.x": -200,
+            "body.velocity.y": 200,
+            "body.bounce.x": 1,
+            "body.bounce.y": 1,
+            "collideWorldBounds": true,
+            "body.width": 144,
+            "body.height": 213,
+            "body.offset.x": 89,
+            "body.offset.y": 54
         }
     ],
-    "plainObjects": [],
+    "plainObjects": [
+        {
+            "id": "2c3c78a1-7aed-4110-a6c4-e60a3784948d",
+            "type": "Collider",
+            "label": "collider",
+            "scope": "METHOD",
+            "object1": "fufuSuperDino",
+            "object2": "barbarian"
+        }
+    ],
     "meta": {
         "app": "Phaser Editor 2D - Scene Editor",
         "url": "https://phasereditor2d.com",

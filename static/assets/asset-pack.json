@@ -2,6 +2,11 @@
     "section1": {
         "files": [
             {
+                "url": "assets/barbarian.png",
+                "type": "image",
+                "key": "barbarian"
+            },
+            {
                 "url": "assets/FufuSuperDino.png",
                 "type": "image",
                 "key": "FufuSuperDino"
@@ -12,6 +17,7 @@
         "app": "Phaser Editor 2D - Asset Pack Editor",
         "contentType": "phasereditor2d.pack.core.AssetContentType",
         "url": "https://phasereditor2d.com",
-        "version": 2
+        "version": 2,
+        "showAllFilesInBlocks": false
     }
 }

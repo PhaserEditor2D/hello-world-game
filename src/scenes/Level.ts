@@ -31,6 +31,20 @@ export default class Level extends Phaser.Scene {
 		fufuSuperDino.body.setOffset(31, 31);
 		fufuSuperDino.body.setCircle(91);
 
+		// barbarian
+		const barbarian = this.add.image(220, 192, "barbarian") as Phaser.GameObjects.Image & { body: Phaser.Physics.Arcade.Body };
+		this.physics.add.existing(barbarian, false);
+		barbarian.body.velocity.x = -200;
+		barbarian.body.velocity.y = 200;
+		barbarian.body.bounce.x = 1;
+		barbarian.body.bounce.y = 1;
+		barbarian.body.collideWorldBounds = true;
+		barbarian.body.setOffset(89, 54);
+		barbarian.body.setSize(144, 213, false);
+
+		// collider
+		this.physics.add.collider(fufuSuperDino, barbarian);
+
 		// fufuSuperDino (components)
 		new PushOnClick(fufuSuperDino);
 
